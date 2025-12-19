@@ -1,6 +1,6 @@
 .frame {
-	box-shadow: 0 4px 6px #2d1b0d, 0 20px 25px -5px rgb(0 0 0 / 0.1),
-		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	box-shadow: 0 4px 6px #2d1b0dc7, 0 20px 25px -5px #2d1b0d26,
+		-4px 5px 21px -3px #2d1b0da6;
 	overflow: hidden;
 }
 
@@ -36,6 +36,7 @@
 	border-radius: 50%;
 	left: 120px;
 	top: 48px;
+	position: absolute;
 }
 
 .lake {
@@ -71,8 +72,8 @@
 	width: 150px;
 	height: 150px;
 	bottom: 23px;
-	right: -12px;
-	z-index: 20;
+	right: -13px;
+	z-index: 10;
 }
 
 .trees {
