@@ -24,9 +24,9 @@
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 105%;
+	width: 108%;
 	height: 300px;
-	bottom: -32px;
+	bottom: -35px;
 	left: -8px;
 }
 .moon {
@@ -47,22 +47,44 @@
 	background-image: url("./assets/imgs/earth.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 110%;
-	height: 137%;
-	bottom: -116px;
-	left: -47px;
+	width: 119%;
+	height: 141%;
+	bottom: -110px;
+	left: -70px;
 	z-index: 10;
 }
 
 .reflections {
-	background-image: url("./assets/imgs/water-reflex.svg");
+	background-image: url("./assets/imgs/water-bottom.svg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 110%;
-	height: 300px;
-	bottom: -138px;
-	left: -5px;
+	width: 105%;
+	height: 103px;
+	bottom: -115px;
+	left: -10px;
+}
+
+.reflections-two {
+	background-image: url("./assets/imgs/water-mid.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 105%;
+	height: 76px;
+	bottom: -45px;
+	left: -10px;
+}
+
+.reflections-three {
+	background-image: url("./assets/imgs/water-top.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 105%;
+	height: 33px;
+	bottom: 38px;
+	left: -10px;
 }
 
 .boat {
@@ -73,17 +95,17 @@
 	height: 150px;
 	bottom: 23px;
 	right: -13px;
-	z-index: 10;
+	z-index: 5;
 }
 
 .trees {
 	background-image: url("./assets/imgs/trees.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 104%;
-	height: 509px;
-	bottom: -122px;
-	left: -19px;
+	width: 113%;
+	height: 540px;
+	bottom: -131px;
+	left: -35px;
 	z-index: 15;
 }
 
@@ -91,6 +113,28 @@
 	-webkit-animation: sway 3s ease-in-out infinite alternate;
 	-moz-animation: sway 3s ease-in-out infinite alternate;
 	animation: sway 3s ease-in-out infinite alternate;
+}
+
+.waving {
+	-webkit-animation: wave 3s ease-in-out infinite alternate;
+	-moz-animation: wave 3s ease-in-out infinite alternate;
+	animation: wave 3s ease-in-out infinite alternate;
+}
+
+.waving-slower {
+	-webkit-animation: wave 3.5s ease-in-out infinite alternate;
+	-moz-animation: wave 3.5s ease-in-out infinite alternate;
+	animation: wave 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+	0% {
+		transform: rotateZ(0deg) translate3d(0px, 2%, 0px) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateZ(360deg) translate3d(0px, 2%, 0px) rotateZ(-360deg);
+	}
 }
 
 @keyframes sway {
