@@ -86,3 +86,23 @@
 	left: -19px;
 	z-index: 15;
 }
+
+.swaying {
+	-webkit-animation: sway 3s ease-in-out infinite alternate;
+	-moz-animation: sway 3s ease-in-out infinite alternate;
+	animation: sway 3s ease-in-out infinite alternate;
+}
+
+@keyframes sway {
+	0% {
+		-webkit-transform: translate3d(3%, 0, 0) rotateZ(3deg);
+		-moz-transform: translate3d(3%, 0, 0) rotateZ(3deg);
+		transform: translate3d(3%, 0, 0) rotateZ(3deg);
+	}
+
+	100% {
+		-webkit-transform: translate3d(-3%, 0, 0) rotateZ(-3deg);
+		-moz-transform: translate3d(-3%, 0, 0) rotateZ(-3deg);
+		transform: translate3d(-3%, 0, 0) rotateZ(-3deg);
+	}
+}
